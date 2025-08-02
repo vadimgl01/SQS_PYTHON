@@ -1,10 +1,10 @@
 import boto3
 import json
 
-sqs = boto3.client('sqs', region_name='us-east-1')
+sqs = boto3.client('sqs', region_name='eu-central-1')
 
-payment_queue_url = 'https://sqs.us-east-1.amazonaws.com/123456789012/payment-queue'
-shipping_queue_url = 'https://sqs.us-east-1.amazonaws.com/123456789012/shipping-queue'
+payment_queue_url = 'https://sqs.eu-central-1.amazonaws.com/342334428607/payment-queue'
+shipping_queue_url = 'https://sqs.eu-central-1.amazonaws.com/342334428607/shipping-queue'
 
 order = {
     "order_id": "ORD12345",
